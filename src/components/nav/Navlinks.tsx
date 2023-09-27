@@ -57,8 +57,28 @@ const StyleUl = styled.ul`
     @media (min-width: 768px) {
         color: ${props => props.theme.colors.primary.dark};
         flex-direction: row;
-        font-size: 0.875rem;
+        font-size: 1.2rem;
+        font-weight;500;
         padding:0;
         gap: 2.625rem;
+    }
+    @media (min-width: 1024px) {
+      a{
+         position:relative;
+         &::after{
+            content: "";
+            position:absolute;
+            width:0;
+            height:2px;
+            bottom:0;
+            left:50%;
+            background:#000;
+            transition: all 0.3s;
+         }
+         &:hover::after{
+            width:100%;
+            left:0;
+         }
+      }
     }
 `;
