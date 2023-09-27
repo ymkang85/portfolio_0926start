@@ -45,6 +45,8 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.28",
-    "react-router-dom": "^6.16.0"
+    "file-loader": "^6.2.0",
+    "react-router-dom": "^6.16.0",
+    "url-loader": "^4.1.1"
   }
 }

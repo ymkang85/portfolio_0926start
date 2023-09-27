@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import ClickAwayListener from 'react-click-away-listener'
 import Logo from './incomp/Logo'
-import Nav from '../nav/Nav'
-import NavButton from '../nav/NavButton'
+import Nav from './nav/Nav'
+import NavButton from './nav/NavButton'
 
 interface Props {
    isNavOpen: boolean
