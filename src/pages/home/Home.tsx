@@ -1,13 +1,14 @@
 import React from 'react'
 import Hero from './Hero'
-import Categories from './Categories'
+import Categories from '../../components/category/Catergories'
 import Features from './Features'
+import cateData from '../../catedata/CateData'
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <Categories />
+      <Categories categories={cateData} />
       <Features />
     </>
   )

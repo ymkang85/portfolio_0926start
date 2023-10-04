@@ -1,31 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
-import HeadingInterface from '../../modules/HeadingInterface'
+import HeadingInterface from '../../modules/HeadingInterface';
+export type NewHeadingInterface = {
+    children : string;
+} & HeadingInterface
 
-const Heading: React.FC<HeadingInterface> = ({
+const Heading: React.FC<NewHeadingInterface> = ({
     children,
     variant,
     color
 }) => {
-    switch (variant) {
-        case "h1":
-            return (
-                <StyledH1 variant={variant} color={color}>
-                    {children}
-                </StyledH1>
-            )
-            break;
-        case "h2":
+    if (variant === 'h1') {
+        return (
+            <StyledH1 variant={variant} color={color}>
+                {children}
+            </StyledH1>
+        );
+    } else if (variant === 'h2') {
+        return (
             <StyledH2 variant={variant} color={color}>
                 {children}
             </StyledH2>
-            break;
-        default:
-            <StyledH3 variant={variant} color={color}>
+        );
+    } else {
+        return (
+            <StyledH3 variant={variant} color='dark'>
                 {children}
             </StyledH3>
+        );
     }
 }
+
 
 const StyledH1 = styled.h1<HeadingInterface>`
     color:${(props) => props.theme.colors.primary.light};

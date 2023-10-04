@@ -15,7 +15,7 @@ const pageMotion ={
 
 const Container = ({children, className} : Props) => {
   return (
-    <StyledContainer className='{className}' initial='initial' animate='animate' exit='exit' variants={pageMotion}>
+    <StyledContainer className={className} initial='initial' animate='animate' exit='exit' variants={pageMotion}>
         { children }
     </StyledContainer>
   )

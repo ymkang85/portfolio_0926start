@@ -1,20 +1,21 @@
-import React from 'react'
-import styled from 'styled-components'
-import Button from '../../components/button/Button'
-import iphone from "../../assets/home/desktop/image-hero-phone.png"
-import circle from "../../assets/shared/desktop/bg-pattern-small-circle.svg"
+import React from 'react';
+import styled from 'styled-components';
+import Button from '../../components/button/Button';
+import iphone from "../../assets/home/desktop/image-hero-phone.png";
+import circle from "../../assets/shared/desktop/bg-pattern-small-circle.svg";
 import Container from '../../components/Container';
 import Card from '../../components/card/Card';
-import Content from '../../components/typography/Content'
+import Content from '../../components/typography/Content';
 
-type Props={};
-const content ={
-  heading:"Award-winning custom designs and digital branding solutions",
-  paragraph:"With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services."
-}
+type Props = {};
+
+const content = {
+  heading: "Award-winning custom designs and digital branding solutions",
+  paragraph: "With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services."
+};
 
 const Hero = (props: Props) => {
-  const {heading, paragraph} = content;
+  const { heading, paragraph } = content;
   return (
     <Container className='full'>
       <Card>
@@ -23,11 +24,17 @@ const Hero = (props: Props) => {
             <Content
               heading={heading}
               headingColor="primary"
-              variant="h1" />
+              variant="h1"
+              paragraph={paragraph}
+              paragraphColor='light'
+            />
+            <Button to="/about" variant="light">
+              Learn More
+            </Button>
             <h1>{heading}</h1>
             <p>{paragraph}</p>
-            <Img src = {iphone} alt="iphone" />
           </Wrapper>
+          <Img src={iphone} alt="iphone" />
         </StyleHero>
       </Card>
     </Container>
@@ -38,7 +45,7 @@ const Img = styled.img`
   position: absolute;
 `;
 const StyleHero = styled.section`
-  background-color:${(props)=> props.theme.colors.primary.main};
+  background-color:${(props) => props.theme.colors.primary.main};
   background-image: url(${circle});
   background-size: cover;
   padding: 5rem 6.4% 28rem;
