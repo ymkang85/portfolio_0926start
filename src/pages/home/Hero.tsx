@@ -32,8 +32,6 @@ const Hero = (props: Props) => {
               <Button to="/about" variant="light">
                  Learn More
               </Button>
-              <h1>{heading}</h1>
-              <p>{paragraph}</p>
             </Wrapper> 
             <Img src={iphone} alt="iphone" />
           </StyleHero>
@@ -44,6 +42,10 @@ const Hero = (props: Props) => {
 
 const Img = styled.img`
    position:absolute;
+   float:right;
+   margin-left: 465px;
+   margin-top: -180px;
+   padding: 0;
 `;
 const StyleHero = styled.section`
    background-color:${(props)=>props.theme.colors.primary.main};

@@ -32,7 +32,7 @@ const Heading: React.FC<NewHeadingInterface> = ({
 };
 
 const StyledH1 = styled.h1<HeadingInterface>`
-   color: ${(props) => props.theme.colors.primary.lignt};
+   color: ${(props) => props.theme.colors.primary.light};
    font-size:2rem;
    font-weight: 400;
    line-height: 36px;

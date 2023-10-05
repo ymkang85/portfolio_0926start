@@ -15,7 +15,7 @@ const Card = ({ children, className} : Props) => {
 }
 
 const StyledCard = styled.div<Props>`
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
     display: grid;
     place-items: center;

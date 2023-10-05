@@ -18,7 +18,7 @@ const theme: ThemeType = {
         primary: {
             main: "#E7816B",
             dark: "#1D1C1E",
-            light:"#FFFFFF"
+            light:"#ffffff"
         },
         secondary: {
             main: "#FFAD9B",

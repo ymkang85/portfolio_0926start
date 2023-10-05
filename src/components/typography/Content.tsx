@@ -2,9 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Heading from './Heading'
 import Paragraph from './Paragraph'
-
-import HeadingInterface, {HeadingColor} 
-         from '../../modules/HeadingInterface'
+import HeadingInterface, {HeadingColor} from '../../modules/HeadingInterface'
 import { ParagraphColor } from '../../modules/ParagraphInterface'
 
 export type ContentInterface = {

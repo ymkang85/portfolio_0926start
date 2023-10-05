@@ -13,7 +13,7 @@ const Routes = (props: Props) => {
 
    return (
       <main>
-         <AnimatePresence exitBeforeEnter>
+         <AnimatePresence mode='wait'>
             <RRoutes location={location} key={location.pathname}>
                <Route path="/" element={<Home />} />
                <Route path="/about" element={<About />} />

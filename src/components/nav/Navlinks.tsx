@@ -10,7 +10,7 @@ const links: LinkInterface[] = [
    },
    {
       text: "Locations",
-      href: "/locations"
+      href: "/location"
    },
    {
       text: "Contact",
